@@ -1,12 +1,11 @@
 return {
-  -- add Catppuccin theme
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    priority = 1000, -- load early
+    priority = 1000,
     opts = {
-      flavour = "macchiato", -- latte, frappe, macchiato, mocha
-      transparent_background = true, -- transparent background
+      flavour = "mocha",
+      transparent_background = true,
       integrations = {
         cmp = true,
         gitsigns = true,
@@ -23,7 +22,6 @@ return {
     end,
   },
 
-  -- set Catppuccin as default after all plugins load
   {
     "LazyVim/LazyVim",
     opts = {
@@ -31,7 +29,6 @@ return {
     },
   },
 
-  -- optional: make lualine match Catppuccin with transparent sections
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
